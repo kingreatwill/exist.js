@@ -8,9 +8,15 @@ if ($.exists(selector)) { }
 
 #Example Uses
 
-if ($.exist('#eleID')) {    /*    DO WORK    */ }        //    param as STRING
-if ($.exist($('#eleID'))) { /*    DO WORK    */ }        //    param as jQuery OBJECT
-if ($('#eleID').exist()) {  /*    DO WORK    */ }        //    enduced on jQuery OBJECT
+if ($.exist('#eleID')) {   
+/*    DO WORK    */ 
+}        //    param as STRING
+if ($.exist($('#eleID'))) { 
+/*    DO WORK    */ 
+}        //    param as jQuery OBJECT
+if ($('#eleID').exist()) {  
+/*    DO WORK    */ 
+}        //    enduced on jQuery OBJECT
 
 $.exist('#eleID', function() {            //    param is STRING && CALLBACK METHOD
     /*    DO WORK    */
