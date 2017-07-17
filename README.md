@@ -6,7 +6,7 @@ if ($(selector).exists()) { }
 2. jQuery.exists = function(selector) {return ($(selector).length > 0);}
 if ($.exists(selector)) { }
 
-#Example Uses
+# Example Uses
 
 if ($.exist('#eleID')) {   
 /*    DO WORK    */ 
@@ -50,3 +50,6 @@ $.exist({                        //    param is OBJECT containing 2 key|value pa
         
     }
 })
+
+# From
+https://stackoverflow.com/questions/31044/is-there-an-exists-function-for-jquery?rq=1
