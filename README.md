@@ -11,30 +11,42 @@ if ($.exists(selector)) { }
 if ($.exist('#eleID')) {   
 /*    DO WORK    */ 
 }        //    param as STRING
+
 if ($.exist($('#eleID'))) { 
 /*    DO WORK    */ 
 }        //    param as jQuery OBJECT
+
 if ($('#eleID').exist()) {  
 /*    DO WORK    */ 
 }        //    enduced on jQuery OBJECT
 
+
 $.exist('#eleID', function() {            //    param is STRING && CALLBACK METHOD
+
     /*    DO WORK    */
     /*    This will ONLY fire if the element EXIST    */
-}, function() {            //    param is STRING && CALLBACK METHOD
+    
+}, function() {           
+//    param is STRING && CALLBACK METHOD
     /*    DO WORK    */
     /*    This will ONLY fire if the element DOES NOT EXIST    */
+    
 })
 
 $('#eleID').exist(function() {            //    enduced on jQuery OBJECT with CALLBACK METHOD
+
     /*    DO WORK    */
     /*    This will ONLY fire if the element EXIST    */
+    
 })
 
 $.exist({                        //    param is OBJECT containing 2 key|value pairs: element = STRING, callback = METHOD
+
     element: '#eleID',
     callback: function() {
+    
         /*    DO WORK    */
         /*    This will ONLY fire if the element EXIST    */
+        
     }
 })
